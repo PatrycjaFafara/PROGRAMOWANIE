@@ -1,0 +1,1 @@
+import laboratorium1
