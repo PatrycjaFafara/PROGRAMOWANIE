@@ -104,7 +104,7 @@ d1 = {
 'wiek':['20','30','40']
 }
 id = 0
-print('Dane osoby:  ', d1['imie'][id],d1['nazwisko'][id],)
+print('Dane osoby:  ', d1['imie'][id],d1['nazwisko'][id],d1['wiek'][id])
 
 
 
