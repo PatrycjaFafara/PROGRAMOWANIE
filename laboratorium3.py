@@ -173,32 +173,64 @@
 # #  Napisz skrypt, w ktorym w zaleznosci od wybranej przez uzytkownika liczby
 #  calkowitej z zakresu od 1 do 5, wykonane zostana nastepujace działania:
 #  dla wpisanej liczby 1  zostanie obliczona wartosc sin(x)
-#  dla liczby 2 obliczona cos(x)  oraz dla pozostalych tan(x),
+# #  dla liczby 2 obliczona cos(x)  oraz dla pozostalych tan(x),
 
-import math
+# import math
 
-liczba = int(input('Podaj liczbę z zakresu od 0 do 5:  '))
-if liczba == 1:
-  y = math.sin(liczba)
-  print('Wartość sin:  ',y)
-elif liczba == 2:
-  y = math.cos(liczba)
-  print('Wartość cos:  ',y)
-else:
-  y = math.tan(liczba)
-  print('Wartość tan:  ',y)
+# liczba = int(input('Podaj liczbę z zakresu od 0 do 5:  '))
+# if liczba == 1:
+#   y = math.sin(liczba)
+#   print('Wartość sin:  ',y)
+# elif liczba == 2:
+#   y = math.cos(liczba)
+#   print('Wartość cos:  ',y)
+# else:
+#   y = math.tan(liczba)
+#   print('Wartość tan:  ',y)
   
 ##Zadanie 5
 ## Napisz skrypt, oblicz silnie z dowolnie wprowadzonej liczby całkowitej n
 ##  trzy silnia to: 3! = 1*2*3      n! = 1*2*3*...*n   0! = 1
 
+
+# n = int(input('Podaj liczbę całkowitą:  '))
+# factorial = 1
+# if n < 0:
+#     print("Silnia nie istnieje dla liczb ujemnych.")
+# elif n == 0:
+#     print("Silnia z 0 wynosi 1.")
+# else:
+#     for i in range(1, n+1):
+#         factorial *= i
+#     print("Silnia z", n, "wynosi", factorial)
+
+
 #Zadanie 6
 # Napisz skrypt, ktory obliczy sume ciagu: 1+1/2+1/3+...+1/n
 # gdzie: zmienna wejsciowa n jest dowolnie zadana przez uzytkownika
 
+# n = int(input('Podaj liczbę: '))
+# if n <= 0:
+#   print('podana liczba musi być dodatnia')
+# else:
+#   suma = 0
+#   for i in range(1, n+1):
+#    suma += 1/i
+#   print('suma ciągu wynosi: ', suma)  
+
+  
 #Zadanie 7
 # Napisz program, ktory dla dowolnej liczby x podanej przez użytkownika
 # czy jest to liczba (a) parzysta, (b) nieparzysta, (c) całkowita.
+
+
+x = int(input("Podaj liczbę: "))
+
+if x % 2 == 0:
+    print("Liczba", x, "jest parzysta.")
+else:
+    print("Liczba", x, "jest nieparzysta.")
+
 
 #Zadanie dodatkowe   (https://pl.wikipedia.org/wiki/R%C3%B3wnanie_kwadratowe)
 # Utworz skrypt, ktory obliczy pierwiastki równania kwadratowego postaci ax^2+bx+c=0
